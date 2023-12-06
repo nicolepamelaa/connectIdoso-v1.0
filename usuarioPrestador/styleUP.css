@@ -75,7 +75,7 @@ svg {
 }
 
 .nomeUsuario {
-    width: 220px;
+    width: 250px;
     height: 40px;
     justify-self: start;
     padding-left: 5px;
@@ -382,7 +382,7 @@ svg {
 }
 
 .nomePerfilUsuario {
-    font-size: 50px;
+    font-size: 45px;
 }
 
 
@@ -391,11 +391,11 @@ svg {
     align-items: center;
     font-family: Ubuntu;
     color: #E3E6FF;
-    font-size: 26px;
-    margin-top: 5px;
+    font-size: 24px;
     margin-left: 45px;
-    width: 200px;
+    width: 350px;
     position: relative;
+    margin-top: -10px;
 }
 
 
@@ -487,13 +487,18 @@ a{
     transition: all .2s ease-in-out;
 }
 
-.imgListFotos {
+.imgListFotos1, .imgListFotos2, .imgListFotos3, .imgListFotos4, .imgListFotos5 {
     max-width: 100%;
     max-height: 100%;
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
 }
+
+
+
+
+
 
 .imgListVideos {
     max-width: 100%;
@@ -508,9 +513,9 @@ a{
 
 
  /*  ------------- ESTILIZAÇÃO MODAL FOTO DO 'FEED' --------------------- */
-.upFoto{
+.upFoto1,.upFoto2,.upFoto3,.upFoto4,.upFoto5 {
     width: 700px;
-    height: 600px;
+    height: 625px;
     align-items: center;
     justify-content: center;
     margin-top: 10%;
@@ -519,16 +524,21 @@ a{
     background-color: #074F6E;
 }
 
-.upFoto::backdrop{
-    background-color: #1c1c1dad;
+.upFoto1::backdrop{
+    background-color: #1c1c1dc4;
     
 }
+
 
 .imgModalSrc {
     width: 100%;
     object-fit: cover;
     
 }
+
+
+
+
 
 .lengendFoto {
     color: #E3E6FF;
@@ -537,7 +547,7 @@ a{
     margin: 20px;
 }
 
-.closedModal {
+.closedModal1,.closedModal2,.closedModal3,.closedModal4,.closedModal5 {
     margin-top: 20px;
     background-color: #b81b1b;
     padding: 5px;
@@ -547,7 +557,7 @@ a{
     color: #E3E6FF;
     font-family: Ubuntu;
 }
-.closedModal:hover {
+.closedModal1,.closedModal2,.closedModal3,.closedModal4,.closedModal5:hover {
     margin-top: 20px;
     background-color: #d82a2a;
     padding: 5px;

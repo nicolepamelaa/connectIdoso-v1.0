@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+
+* {
+    margin: none;
+    padding: none;
+    border: none;
+
+}
+
+body {
+    display: flex;
+    width: 375px;
+    height: 844px;
+    background-color: #074F6E;
+    /* border: solid 2px rgb(255, 255, 255);   */
+    align-items: start;
+    justify-content: center;
+}
+
+.imgLogo {
+    position: relative;
+    display: flex;
+    width: 390px;
+    height: 270px;
+    border-radius: 0px 0px 30px 30px;
+    background: #262952;
+    justify-content: center;
+}
+
+.configImgLogo {
+    /* border: solid 2px#fff; */
+    object-fit: contain;
+    width: 100%;
+    height: 110%;
+}
+
+/*  AMBIENTE DE LOGIN E SENHA */
+
+.login {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    position: absolute;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    font-size: 30px;
+    width: 350px;
+    height: 150px;
+    padding: 20px;
+}
+
+.email {
+    display: grid;
+    width: 360px;
+    height: 150px;
+    padding-top: 20px;
+    color: #E3E6FF;
+}
+
+input {
+    width: 310px;
+    height: 34px;
+    background-color: #177CA7;
+    border-radius: 40px;
+    left: 15px;
+    font-family: Ubuntu;
+    font-size: 18px;
+    color: #E3E6FF;
+}
+
+input::placeholder {
+    color: rgb(149, 149, 153);
+    font-size: 15px;
+    padding-left: 10px;
+   }
+
+.esqueciSenha {
+    display: flex;
+    position: relative;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #E3E6FF;
+}
+
+.btnAcessar {
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 319px;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    background-color: #177CA7;
+    color: #E3E6FF;
+    margin-top: 20px;
+    font-family: Ubuntu;
+}
+
+
+
+/*  ------------------------- MEDIA QUERY ---------------------------------- */
+
+
+@media (max-width: 1920px) {
+    
+
+    body {
+        display: flex;
+        width: 1900px;
+        height: 844px;
+        background-color: #074F6E;
+        /* border: solid 2px rgb(255, 255, 255);   */
+        align-items: start;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .imgLogo {
+    position: relative;
+    display: flex;
+    width: 700px;
+    height: 270px;
+    border-radius: 0px 0px 30px 30px;
+    background: #262952;
+    justify-content: center;
+}
+
+.login {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    position: relative;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    font-size: 30px;
+    width: 500px;
+    height: 450px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    left: 75px;
+    
+}
+
+.email {
+    display: grid;
+    width: 500px;
+    height: 450px;
+    padding-top: 20px;
+    color: #E3E6FF;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input {
+    width: 410px;
+    height: 34px;
+    background-color: #177CA7;
+    border-radius: 40px;
+    left: 15px;
+    font-family: Ubuntu;
+    font-size: 18px;
+    color: #E3E6FF;
+}
+
+input::placeholder {
+    color: rgb(149, 149, 153);
+    font-size: 15px;
+    padding-left: 10px;
+   }
+
+.esqueciSenha {
+    display: flex;
+    position: relative;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #E3E6FF;
+    left: 40px;
+}
+
+.btnAcessar {
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 319px;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    background-color: #177CA7;
+    color: #E3E6FF;
+    margin-top: 20px;
+    font-family: Ubuntu;
+    left: 50px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+}
+
+.btnAcessar:hover {
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 319px;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    background-color: #176181e0;
+    color: #E3E6FF;
+    margin-top: 20px;
+    font-family: Ubuntu;
+    left: 50px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+}
+
+
+}

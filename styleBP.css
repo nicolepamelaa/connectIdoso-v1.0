@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    width: 385px;
+    height: 994px;
+    background-color: #074F6E;
+    
+}
+
+
+input {
+    width: 310px;
+    height: 34px;
+    background-color: #177CA7;
+    border-radius: 40px;
+}
+
+input::placeholder {
+    color: rgb(149, 149, 153);
+    font-size: 15px;
+    padding-left: 10px;
+   }
+
+
+
+
+/* PERFIL PRINCIPAL  */
+
+.configPerfil {
+    display: flex;
+    width: 389px;
+    height: 120px;
+    background-color: #262952;
+
+}
+
+.testeConfiUsuario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 2fr 1fr);
+}
+
+.imgPerfil {
+    display: flex;
+    width: 130px;
+    height: 130px;
+    background-color: #177CA7;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.configuracaoPerfil {
+    display: flex;
+    width: 230px;
+    height: 40px;
+    align-items: center;
+    justify-content: end;
+    font-size: 18px;
+    font-family: Ubuntu;
+    color: #e3e6ffbb;
+    font-style: italic;
+}
+
+
+svg {
+    padding-left: 10px;
+}
+
+.nomeUsuario {
+    width: 220px;
+    height: 40px;
+    justify-self: start;
+    padding-left: 5px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+}
+
+.nomePerfilUsuario {
+    align-self: center;
+    padding-top: 5px;
+}
+
+
+#cidade{
+    justify-self: start;
+    padding-left: 5px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+
+
+.imgPerfilAjustada {
+    display: flex;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+    object-fit:cover;
+    width: 90%;
+    height: 90%;
+}
+
+.postagens {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: 1fr;
+    /* width: 290px;
+    height: 25; */
+    font-size: 25px;
+    font-family: Ubuntu;
+    align-items: center;
+    justify-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+
+}
+
+.procProfissonal {
+    font-size: 20px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #E3E6FF;
+}
+
+.novoInteresse {
+    width: auto;
+    height: 45px;
+    background-color: #177CA7;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+
+}
+
+#novoInteresse {
+    display: flex;
+    font-size: 25px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    justify-content: center;
+    padding-top: 5px;
+    
+}
+
+
+.campoDeBusca {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+
+    
+}
+
+.svgBtn {
+    background-color: #074F6E;
+    cursor: pointer;
+}
+
+
+input {
+    width: 310px;
+    height: 34px;
+    background-color: #177CA7;
+    border-radius: 10px;
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #E3E6FF;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    font-size: 18px;
+    width: 310px;
+    height: 34px;
+    background-color: #177CA7;
+    border-radius: 40px;
+    font-family: Ubuntu;
+    
+}
+
+#inputBusca {
+    margin-left: 20px;
+}
+
+
+
+
+
+/*  RESULTADO DA BUSCA */
+
+.resultadoBuscaProfissional {
+    display: flex;
+    flex-direction: column;
+    background-color: #177CA7;
+    margin-top: 15%;
+    /* width: auto; */
+    
+}
+
+.resultadoBuscaPerfil {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 389px;
+    height: 80px;
+
+}
+
+
+.imgPerfilBusca {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    background-color:#262952;
+    border-radius: 50%;
+    margin-left: 4%;
+    margin-top: 2%;
+    
+}
+
+.resultadoNome {
+    display: grid;
+    grid-template-rows: 3fr;
+    
+}
+
+
+
+.resultadoBuscaNome {
+    display: flex;
+    color: #E3E6FF;
+    font-size: 20px;
+    font-family: Ubuntu;
+    margin-left: 10px;
+    width: auto;
+    align-items: center;
+}
+
+.resultadoBuscaCidade{
+    display: flex;
+    color: #E3E6FF;
+    font-size: 18px;
+    font-family: Ubuntu;
+    margin-left: 10px;
+}
+.resultadoBuscaProfissao{
+    display: flex;
+    color: #E3E6FF;
+    font-size: 18px;
+    font-family: Ubuntu;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------  MEDIA QUERY --------------------------------------------------------*/
+
+
+/* VERSÃO DESKTOP */
+
+@media(max-width: 1920px) {
+    
+    body {
+        display: flex;
+        width: 1900px;
+        height: 920px;
+        /* background-color: #074F6E; */
+       /*  background-color: #20bcff; */
+       margin: auto;
+        
+    }
+
+/* PERFIL PRINCIPAL  */
+
+.configPerfil {
+    display: flex;
+    width: 1900px;
+    height: 200px;
+    background-color: #262952;
+
+}
+
+.testeConfiUsuario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 2fr 1fr);
+    width: 1600px;
+    /* background-color: #177CA7; */
+}
+
+.imgPerfil {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    background-color: #177CA7;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+.configuracaoPerfil {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    align-items: center;
+    justify-content: end;
+    font-size: 18px;
+    font-family: Ubuntu;
+    color: #e3e6ffbb;
+    font-style: italic;
+    right: 25px;
+    position: relative;
+    justify-self: end;
+    gap: 5px;
+
+}
+
+.perfilHome {
+    display: flex;
+    align-items: center;
+    
+}
+
+.iconHome {
+    display: flex;
+    width: 25px;
+    height: 25px;
+
+}
+
+.svgBtn {
+    padding-left: 10px;
+}
+
+.imgPerfilAjustada {
+    display: flex;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+    object-fit:cover;
+    width: 90%;
+    height: 90%;
+}
+
+.nomeUsuario {
+    width: 320px;
+    height: 60px;
+    justify-self: start;
+    align-items: center;
+    padding-left: 50px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    font-size: 35px;
+}
+
+
+#cidade{
+    justify-self: start;
+    align-items: center;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-left: 45px;
+    width: 200px;
+    position: relative;
+}
+
+
+
+
+/*  INTERESSES E BUSCAR PROFISSIONAL */
+
+.postagens {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: 1fr;
+    /* width: 290px;
+    height: 25; */
+    font-size: 35px;
+    font-family: Ubuntu;
+    align-items: center;
+    justify-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    /* background-color: #b81b1b; */
+    
+}
+
+.procProfissonal {
+    font-size: 35px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    
+}
+
+
+
+/* ------ CAMPO DE BUSCA --------*/
+
+.campoDeBusca {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    justify-content: center;
+
+}
+
+
+input {
+    width: 790px;
+    height: 40px;
+    background-color: #177CA7;
+    border-radius: 10px;
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #E3E6FF;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    font-size: 20px;
+    width: 310px;
+    height: 34px;
+    background-color: #177CA7;
+    border-radius: 40px;
+    font-family: Ubuntu;
+    
+}
+
+/* #inputBusca {
+    margin-left: 20px;
+} */
+
+
+
+
+
+/*  RESULTADO DA BUSCA */
+
+.resultadoBuscaProfissional {
+    display: flex;
+    flex-direction: column;
+    background-color: #177CA7;
+    margin-top: 1%;
+    /* width: auto; */
+    transition: 1s;
+    border-radius: 10px;
+    
+    
+}
+
+.resultadoBuscaPerfil {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 500px;
+    height: 80px;
+}
+
+
+.imgPerfilBusca {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    background-color:#262952;
+    border-radius: 50%;
+    margin-left: 4%;
+    margin-top: 2%;
+    
+}
+
+.resultadoNome {
+    display: grid;
+    grid-template-rows: 3fr;
+    width: 500px;
+    
+}
+
+
+
+.resultadoBuscaNome {
+    display: flex;
+    color: #E3E6FF;
+    font-size: 25px;
+    font-family: Ubuntu;
+    margin-left: 10px;
+    width: auto;
+    align-items: center;
+}
+
+.resultadoBuscaProfissao{
+    display: flex;
+    color: #E3E6FF;
+    font-size: 20px;
+    font-family: Ubuntu;
+    margin-left: 10px;
+    
+}
+
+.resultadoBuscaCidade{
+    display: flex;
+    color: #E3E6FF;
+    font-size: 20px;
+    font-family: Ubuntu;
+    margin-left: 10px;
+}
+
+.resultadoNaoEncontrado {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2%;
+    
+}
+
+
+/*  AMBIENTE MODAL  */
+
+
+
+
+}

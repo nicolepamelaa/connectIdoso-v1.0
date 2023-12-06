@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleBP.css">
+    <title>Connect Idoso</title>
+</head>
+<body>
+    <div class="perfilPP">
+        <div class="configPerfil">
+            <div class="imgPerfil">
+                <img class="imgPerfilAjustada" src="img/fotoPERFIL-connectidoso.jpg" alt="imagem-de-perfil-cliente">
+            </div> 
+            <div class="testeConfiUsuario">
+                <div class="configuracaoPerfil">
+                    <div class="perfilHome">
+                        <a class="perfilHome" href="perfilPrincipal.html">
+                            <p>Página Inicial</p>
+                            <svg class="iconHome" xmlns="http://www.w3.org/2000/svg" width="99" height="108" viewBox="0 0 99 108" fill="none">
+                                <path d="M5 39.3261L49.1335 5L93.2671 39.3261V93.2671C93.2671 95.8682 92.2338 98.3627 90.3945 100.202C88.5553 102.041 86.0607 103.075 83.4596 103.075H14.8075C12.2064 103.075 9.71179 102.041 7.87254 100.202C6.03328 98.3627 5 95.8682 5 93.2671V39.3261Z" stroke="#E3E6FF" stroke-width="9.80745" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M34.4223 103.075V54.0373H63.8447V103.075" stroke="#E3E6FF" stroke-width="9.80745" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div> 
+                    <p>Configurações</p>
+                    <svg class="configuracoes" xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25" fill="none">
+                        <path d="M11.5 1H9.46774V4.33871L7.43548 5.08065L5.40323 2.85484L2.69355 5.82258L4.72581 8.04839L4.04839 10.2742H1V14.7258H4.04839L4.72581 16.9516L2.69355 19.1774L5.40323 22.1452L7.43548 19.9194L9.46774 20.6613V24H11.5H13.5323V20.6613L15.5645 19.9194L17.5968 22.1452L20.3065 19.1774L18.2742 16.9516L18.9516 14.7258H22V10.2742H18.9516L18.2742 8.04839L20.3065 5.82258L17.5968 2.85484L15.5645 5.08065L13.5323 4.33871V1H11.5Z" stroke="#F3F4F4" stroke-width="1.68534" stroke-miterlimit="10"/>
+                        <path d="M11.5 14.7258C12.6224 14.7258 13.5323 13.7293 13.5323 12.5C13.5323 11.2707 12.6224 10.2742 11.5 10.2742C10.3776 10.2742 9.46774 11.2707 9.46774 12.5C9.46774 13.7293 10.3776 14.7258 11.5 14.7258Z" stroke="#F3F4F4" stroke-width="1.68534" stroke-miterlimit="10"/>
+                    </svg>
+                        <!-- MODAL LOGOUT -->
+                            <dialog class="modalLogout">
+                                <button class="sair">Sair da conta</button>
+                            </dialog>
+                </div>
+                <div class="nomeUsuario">
+                    <h2 class="nomePerfilUsuario">Beth Floriano</h2>
+                </div>
+                <p id="cidade">Maceió-Alagoas</p>
+            </div>
+        </div>
+        <!-- bloco postagem | opções de postagens -->
+        <div class="postagens">
+            <a id="a" class="interesses" href="perfilPrincipal.html">Interesses</a>
+            <a id="a" class="procProfissonal" href="">Buscar profissional</a>
+        </div>
+
+        <!--  Buscar Profissional -->
+        <div class="novoInteresse">
+            <p id="novoInteresse">Procure seu profissional</p>
+        </div>
+        <div class="campoDeBusca">
+            <div>
+                <input id="inputBusca" type="text" placeholder="Digite o nome que deseja" >
+            </div>
+            <!-- campo svg lupa -->
+            <button  class="svgBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="39" viewBox="0 0 89 89" fill="none">
+                    <path d="M38.2704 0.109344C17.167 0.109344 0 17.2763 0 38.3797C0 59.4831 17.167 76.6501 38.2704 76.6501C44.7217 76.6501 51.0636 75.1193 56.4215 72.167C56.8506 72.6834 57.3265 73.1593 57.8429 73.5884L68.7773 84.5228C69.787 85.6589 71.0182 86.5767 72.3953 87.2197C73.7725 87.8627 75.2666 88.2175 76.7858 88.2622C78.305 88.307 79.8174 88.0407 81.23 87.4798C82.6426 86.9189 83.9257 86.0751 85.0004 85.0004C86.0751 83.9257 86.9189 82.6426 87.4798 81.23C88.0407 79.8174 88.3069 78.3051 88.2622 76.7858C88.2175 75.2666 87.8627 73.7725 87.2197 72.3953C86.5767 71.0182 85.6589 69.787 84.5228 68.7773L73.5884 57.8429C73.0558 57.3101 72.4695 56.8337 71.8389 56.4215C74.7912 51.0636 76.6501 44.831 76.6501 38.2704C76.6501 17.167 59.4831 0 38.3797 0L38.2704 0.109344ZM38.2704 11.0437C53.4692 11.0437 65.6063 23.1809 65.6063 38.3797C65.6063 45.5964 62.9821 52.2664 58.3896 57.1869C58.2803 57.2962 58.171 57.4056 58.0616 57.5149C57.5451 57.9441 57.0693 58.4199 56.6401 58.9364C51.829 63.3101 45.2684 65.825 38.161 65.825C22.9622 65.825 10.825 53.6879 10.825 38.4891C10.825 23.2903 22.9622 11.1531 38.161 11.1531L38.2704 11.0437Z" fill="#E3E6FF"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <script type="module" src="buscarProfissional.js"></script>
+</body>
+</html>

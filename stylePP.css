@@ -533,3 +533,532 @@ dialog::backdrop {
 }
 
 }
+
+
+/*-------------------------------------------------------  MEDIA QUERY --------------------------------------------------------*/
+
+
+/* VERSÃO DESKTOP */
+
+@media(max-width: 1080px) {
+    
+
+
+    body {
+        display: flex;
+        width: 900px;
+        height: 920px;
+        /* background-color: #074F6E; */
+       /*  background-color: #20bcff; */
+       margin: 0;
+       padding: 0;
+        
+    }
+
+
+
+/* PERFIL PRINCIPAL  */
+
+.configPerfil {
+    display: flex;
+    width: 1080px;
+    height: 200px;
+    background-color: #262952;
+
+}
+
+.testeConfiUsuario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 2fr 1fr);
+    width: 850px;
+    /* background-color: #177CA7; */
+}
+
+.imgPerfil {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: #177CA7;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+.configuracaoPerfil {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    align-items: center;
+    justify-content: end;
+    font-size: 18px;
+    font-family: Ubuntu;
+    color: #e3e6ffbb;
+    font-style: italic;
+    right: 25px;
+    position: relative;
+    justify-self: end;
+    gap: 5px;
+
+}
+
+.perfilHome {
+    display: flex;
+    align-items: center;
+    
+}
+
+.iconHome {
+    display: flex;
+    width: 25px;
+    height: 25px;
+
+}
+
+
+svg {
+    padding-left: 5px;
+}
+
+.imgPerfilAjustada {
+    display: flex;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+    object-fit:cover;
+    width: 90%;
+    height: 90%;
+}
+
+.nomeUsuario {
+    width: 320px;
+    height: 60px;
+    justify-self: start;
+    align-items: center;
+    padding-left: 50px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    font-size: 30px;
+}
+
+
+#cidade{
+    justify-self: start;
+    align-items: center;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-left: 45px;
+    width: 200px;
+    position: relative;
+}
+
+
+
+/*  INTERESSES E POSTAGEM */
+
+.postagens {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: 1fr;
+    /* width: 290px;
+    height: 25; */
+    font-size: 30px;
+    font-family: Ubuntu;
+    align-items: center;
+    justify-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    /* background-color: #b81b1b; */
+    
+
+}
+
+.procProfissonal {
+    font-size: 30px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #E3E6FF;
+
+}
+
+.novoInteresse {
+    width: auto;
+    height: 45px;
+    background-color: #177CA7;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+    cursor: pointer;
+
+}
+
+
+#novoInteresse {
+    display: flex;
+    font-size: 28px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    justify-content: center;
+    padding-top: 5px;
+    
+}
+
+
+
+
+
+/*  AMBIENTE MODAL  */
+
+
+/*  MODAL ESCOLHA ESPECIALIDADES  */
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.modalInteresses {
+    width: 800px;
+    margin-left: 12%;
+    margin-top: 25%;
+    border-radius: 20px;
+}
+
+
+
+
+.newInteresse {
+    background-color:#177CA7;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 4fr;
+    gap: 2px;
+        
+
+}
+
+#modalOpcoes {
+    
+    background-color: #074F6E;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    
+}
+
+#optionClose {
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+}
+
+#optionClose:hover {
+    background-color: #b81b1b;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    transition: 100ms;
+}
+
+#modalOpcoes:hover {
+    
+    background-color: #1e5268ad;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+}
+
+}
+
+
+
+
+
+/*-------------------------------------------------------  MEDIA QUERY --------------------------------------------------------*/
+
+
+/* VERSÃO DESKTOP */
+
+@media(max-width: 520px) {
+    
+
+
+    body {
+        display: flex;
+        width: 490px;
+        height: 620px;
+        /* background-color: #074F6E; */
+       /*  background-color: #20bcff; */
+       margin: 0;
+       padding: 0;
+        
+    }
+
+
+
+/* PERFIL PRINCIPAL  */
+
+.configPerfil {
+    display: flex;
+    width: 520px;
+    height: 100px;
+    background-color: #262952;
+
+}
+
+.testeConfiUsuario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 2fr 1fr);
+    width: 400px;
+    /* background-color: #177CA7; */
+}
+
+.imgPerfil {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #177CA7;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
+.configuracaoPerfil {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    align-items: center;
+    justify-content: end;
+    font-size: 15px;
+    font-family: Ubuntu;
+    color: #e3e6ffbb;
+    font-style: italic;
+    right: 20px;
+    position: relative;
+    justify-self: end;
+    gap: 3px;
+
+}
+
+.perfilHome {
+    display: flex;
+    align-items: center;
+    
+}
+
+.iconHome {
+    display: flex;
+    width: 20px;
+    height: 20px;
+
+}
+
+
+svg {
+    padding-left: 5px;
+}
+
+.imgPerfilAjustada {
+    display: flex;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+    object-fit:cover;
+    width: 90%;
+    height: 90%;
+}
+
+.nomeUsuario {
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    font-size: 20px;
+    margin-top: -2px;
+}
+
+.nomePerfilUsuario {
+    padding: 2px;
+}
+
+
+
+
+#cidade{
+    justify-self: start;
+    align-items: center;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    font-size: 14px;
+    margin-left: 45px;
+    width: 200px;
+    position: relative;
+    margin-top: -2px;
+}
+
+
+
+/*  INTERESSES E POSTAGEM */
+
+.postagens {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: 1fr;
+    /* width: 290px;
+    height: 25; */
+    font-size: 25px;
+    font-family: Ubuntu;
+    align-items: center;
+    justify-items: center;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: #b81b1b; */
+    
+
+}
+
+.procProfissonal {
+    font-size: 25px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #E3E6FF;
+
+}
+
+.novoInteresse {
+    width: auto;
+    height: 45px;
+    background-color: #177CA7;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+    cursor: pointer;
+
+}
+
+
+#novoInteresse {
+    display: flex;
+    font-size: 25px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    justify-content: center;
+    padding-top: 5px;
+    
+}
+
+
+
+
+
+/*  AMBIENTE MODAL  */
+
+
+/*  MODAL ESCOLHA ESPECIALIDADES  */
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.modalInteresses {
+    width: 420px;
+    margin-left: 10%;
+    margin-top: 50%;
+    border-radius: 20px;
+}
+
+
+
+
+.newInteresse {
+    background-color:#177CA7;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 4fr;
+    gap: 2px;
+        
+
+}
+
+#modalOpcoes {
+    
+    background-color: #074F6E;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    
+}
+
+#optionClose {
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+}
+
+#optionClose:hover {
+    background-color: #b81b1b;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    transition: 100ms;
+}
+
+#modalOpcoes:hover {
+    
+    background-color: #1e5268ad;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+}
+
+}

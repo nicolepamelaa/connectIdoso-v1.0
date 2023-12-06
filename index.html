@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Connectidoso</title>
+</head>
+<body>
+    <div class="bodyAll">
+        <div class="imgLogo">
+            <img class="configImgLogo"src="img/logo-login.png" alt="logo">
+        </div>
+
+    <div class="login">
+        <form id="form">
+            <div class="email">
+               <label for="emailName"><b>E-mail</b></label>
+               <input id="userNametest" type="text" placeholder="Insira seu e-mail" name="userName" required>
+                <br>
+               <label for="senha"><b>Senha</b></label>
+               <input id="pwd" type="password" placeholder="Insira sua senha" name="psw" required>
+               <label class="esqueciSenha" for="esqueciSenha"><i>Esqueci senha</i></label>
+               <button class="btnAcessar" type="submit" onclick="send(); return false">Acessar</button>
+            </div>
+           </form>
+    </div>
+    </div>
+    <script>
+
+
+
+        const login = document.querySelector('#userNametest')
+        const pwd = document.querySelector('#pwd')
+        
+        function send(){
+            if(login.value === 'admin' && pwd.value === '123'){
+                    alert('sucesso!')
+                    location.href = 'perfilPrincipal.html';
+                }
+                else {
+                    alert('Usuário ou senha inválidos. Tente Novamente')
+                    location.href = 'index.html';
+             }
+        }
+
+
+
+    </script>
+</body>
+</html>

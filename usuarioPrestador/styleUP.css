@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    width: 385px;
+    height: 994px;
+    background-color: #074F6E;
+    
+}
+
+
+input {
+    width: 310px;
+    height: 34px;
+    background-color: #177CA7;
+    border-radius: 40px;
+}
+
+input::placeholder {
+    color: rgb(149, 149, 153);
+    font-size: 15px;
+    padding-left: 10px;
+   }
+
+
+
+
+/* PERFIL PRINCIPAL  */
+
+.configPerfil {
+    display: flex;
+    width: 389px;
+    height: 120px;
+    background-color: #262952;
+
+}
+
+.testeConfiUsuario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 2fr 1fr);
+}
+
+.imgPerfil {
+    display: flex;
+    width: 130px;
+    height: 130px;
+    background-color: #177CA7;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.configuracaoPerfil {
+    display: flex;
+    width: 230px;
+    height: 40px;
+    align-items: center;
+    justify-content: end;
+    font-size: 18px;
+    font-family: Ubuntu;
+    color: #e3e6ffbb;
+    font-style: italic;
+}
+
+svg {
+    padding-left: 10px;
+}
+
+.nomeUsuario {
+    width: 220px;
+    height: 40px;
+    justify-self: start;
+    padding-left: 5px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+}
+
+.nomePerfilUsuario {
+    align-self: center;
+    
+}
+
+
+#cidade{
+    justify-self: start;
+    padding-left: 5px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+
+
+.imgPerfilAjustada {
+    display: flex;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+    object-fit:cover;
+    width: 90%;
+    height: 90%;
+}
+
+.postagens {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: 1fr;
+    /* width: 290px;
+    height: 25; */
+    font-size: 25px;
+    font-family: Ubuntu;
+    align-items: center;
+    justify-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+
+}
+
+.procProfissonal {
+    font-size: 20px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #E3E6FF;
+}
+
+.novoInteresse {
+    width: auto;
+    height: 45px;
+    background-color: #177CA7;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+
+}
+
+
+
+#novoInteresse {
+    display: flex;
+    font-size: 25px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    justify-content: center;
+    padding-top: 5px;
+    
+}
+
+
+/*  MODAL LOGOUT  */
+
+.modalLogout {
+    left: 200px;
+    top: 1%;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.modalLogout::backdrop {
+    background-color: #1f2020a1;
+
+}
+
+
+
+.sair {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #074F6E;
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #E3E6FF;
+    
+}
+
+
+
+
+
+/*  MODAL ESCOLHA ESPECIALIDADES  */
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.modalInteresses {
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 20%;
+    border-radius: 20px;
+    position: fixed;
+}
+
+
+
+
+.newInteresse {
+    background-color:#177CA7;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 4fr;
+    gap: 2px;
+        
+
+}
+
+#modalOpcoes {
+    
+    background-color: #074F6E;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    
+}
+
+#optionClose {
+    background-color: #ad1111e3;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+}
+
+#optionClose:hover {
+    background-color: #b81b1b;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    transition: 100ms;
+}
+
+#modalOpcoes:hover {
+    
+    background-color: #1e5268ad;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------  MEDIA QUERY --------------------------------------------------------*/
+
+
+/* VERSÃO DESKTOP */
+
+@media(max-width: 1920px) {
+    
+    body {
+        display: flex;
+        width: 1900px;
+        height: 920px;
+        /* background-color: #074F6E; */
+       /*  background-color: #20bcff; */
+       margin: auto;
+        
+    }
+
+/* PERFIL PRINCIPAL  */
+
+.configPerfil {
+    display: flex;
+    width: 1900px;
+    height: 200px;
+    background-color: #262952;
+
+}
+
+.testeConfiUsuario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 2fr 1fr);
+    width: 1600px;
+    /* background-color: #177CA7; */
+}
+
+.imgPerfil {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    background-color: #177CA7;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+.configuracaoPerfil {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    align-items: center;
+    justify-content: end;
+    font-size: 18px;
+    font-family: Ubuntu;
+    color: #e3e6ffbb;
+    font-style: italic;
+    right: 25px;
+    position: relative;
+    justify-self: end;
+    gap: 5px;
+
+}
+
+.perfilHome {
+    display: flex;
+    align-items: center;
+    
+}
+
+.iconHome {
+    display: flex;
+    width: 25px;
+    height: 25px;
+
+}
+
+svg {
+    padding-left: 10px;
+}
+
+.imgPerfilAjustada {
+    display: flex;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+    object-fit:cover;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+.nomeUsuario {
+    width: 820px;
+    height: 70px;
+    justify-self: start;
+    align-items: center;
+    padding-left: 40px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    font-size: 35px;
+}
+
+.nomePerfilUsuario {
+    font-size: 50px;
+}
+
+
+#cidade{
+    justify-self: start;
+    align-items: center;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-left: 45px;
+    width: 200px;
+    position: relative;
+}
+
+
+
+/*  INTERESSES E POSTAGEM */
+
+.postagens {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: 1fr;
+    /* width: 290px;
+    height: 25; */
+    font-size: 35px;
+    font-family: Ubuntu;
+    align-items: center;
+    justify-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    /* background-color: #b81b1b; */
+    
+
+}
+
+.procProfissonal {
+    font-size: 35px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #E3E6FF;
+}
+
+.novoInteresse {
+    width: auto;
+    height: 45px;
+    background-color: #177CA7;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+    
+
+}
+
+
+
+#novoInteresse {
+    display: flex;
+    font-size: 28px;
+    font-family: Ubuntu;
+    color: #E3E6FF;
+    justify-content: center;
+    padding-top: 5px;
+    
+}
+
+
+
+/*  CONFIGURAÇÕES DE ESTILOS DAS MÍDIAS - FOTOS E VÍDEOS DO PERFIL DO PROFISSIONAL */
+
+.gridFotos {
+    /* background-color: #b81b1b; */
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+
+}
+
+.listFoto {
+    
+    border-radius: 10px;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.listFoto:hover {
+    background-color:#177CA7;
+    border-radius: 10px;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.imgListFotos {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.imgListVideos {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+ /*  ------------- ESTILIZAÇÃO MODAL FOTO DO 'FEED' --------------------- */
+.upFoto{
+    width: 700px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 30%;
+    border-radius: 20px;
+    background-color: #074F6E;
+}
+
+.upFoto::backdrop{
+    background-color: #1c1c1dad;
+    
+}
+
+.imgModalSrc {
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.lengendFoto {
+    color: #E3E6FF;
+    font-size: 24px;
+    font-family: Ubuntu;
+    margin: 20px;
+}
+
+.closedModal {
+    margin-top: 20px;
+    background-color: #b81b1b;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+}
+.closedModal:hover {
+    margin-top: 20px;
+    background-color: #d82a2a;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #E3E6FF;
+    font-family: Ubuntu;
+}
+
+
+
+}
